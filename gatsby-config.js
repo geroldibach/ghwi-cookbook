@@ -28,6 +28,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: `recipes`,
+        path: `${__dirname}/recipes`,
+      },
+    },
+
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'images',
         path: './src/images/',
       },

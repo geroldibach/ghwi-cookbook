@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <Layout pageTitle='About Me'>
       <p>
-        Hi there! I'm the proud creator of this site, which I built with Gatsby.
+        Here is my collection of recipies. As first approach this is only dedicadet to me, The editorial is online, so I can redefine and optimize all aspects of creating reproducable fine results.
       </p>
     </Layout>
   );
