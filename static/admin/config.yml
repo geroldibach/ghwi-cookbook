@@ -51,7 +51,6 @@ collections:
       - { label: "Image", name: "image", widget: image , required: false}
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
-      collections:
   - label: "Pages"
     name: "pages"
     files:
