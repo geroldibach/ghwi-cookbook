@@ -19,36 +19,50 @@ module.exports = {
     'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
-      },
-    },
-    {
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: `blog`,
+    //     path: `${__dirname}/content/blog`,
+    //   },
+    // },
+     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: `recipes`,
-        path: `${__dirname}/recipes`,
+        path: `${__dirname}/content/recipes`,
       },
     },
 
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: './src/images/',
-      },
-      __key: 'images',
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'pages',
-        path: './src/pages/',
-      },
-      __key: 'pages',
-    },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'images',
+    //     path: './src/images/',
+    //   },
+    //   __key: 'images',
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'pages',
+    //     path: './src/pages/',
+    //   },
+    //   __key: 'pages',
+    // },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/static/assets`,
+    //     name: 'images',
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `content`,
+    //     path: `${__dirname}/content`,
+    //   },
+    // },
   ],
 };

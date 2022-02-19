@@ -7,6 +7,7 @@ const Recipes = ({ data }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
+      this is from local mdx.slug.js
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>

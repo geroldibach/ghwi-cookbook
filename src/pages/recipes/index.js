@@ -24,7 +24,6 @@ const RecipesPage = ({ data }) => {
 export const query = graphql`
   query {
     allMdx(
-        filter: {slug: {regex: "/recipes/"}},
         sort: {fields: frontmatter___date, order: DESC})
      {
       nodes {

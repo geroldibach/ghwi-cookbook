@@ -1,12 +1,13 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import Layout from '../../components/layout'
+import Layout from '../src/components/layout'
 
 const Recipes = ({ data }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
+      this is from local mdx.slug.js
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>

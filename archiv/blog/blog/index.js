@@ -21,10 +21,26 @@ const BlogPage = ({ data }) => {
   )
 }
 
+// export const query = graphql`
+//   query {
+//     allMdx(
+//       filter: {slug: {regex: "/blog/"}},
+//       sort: {fields: frontmatter___date, order: DESC}) {
+//       nodes {
+//         frontmatter {
+//           date(formatString: "MMMM D, YYYY")
+//           title
+//         }
+//         id
+//         slug
+//       }
+//     }
+//   }
+// `
+
 export const query = graphql`
   query {
     allMdx(
-      filter: {slug: {regex: "/blog/"}},
       sort: {fields: frontmatter___date, order: DESC}) {
       nodes {
         frontmatter {
