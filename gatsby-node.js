@@ -31,7 +31,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       // You can prepend it with any prefix you want
       path: `/recipes/${node.slug}`,
       // This component will wrap our MDX content
-      component: path.resolve(`./src/components/posts-page-layout.js`),
+      component: path.resolve(`./src/components/recipe-page-layout.js`),
       //component: blogPostTemplate,
       // You can use the values in this context in
       // our page layout component
