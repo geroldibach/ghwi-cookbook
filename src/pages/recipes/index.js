@@ -3,39 +3,47 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../../components/layout'
 
 const RecipesPage = ({ data }) => {
+  let entries =  data.allMarkdownRemark.edges.map(edge => {
+    let fileName = edge.node.fileAbsolutePath.replace(/^.*[\\/]/, '').replace(/\.md$/, '')
+    return(
+    <article key={edge.node.id}>
+      <h2>
+        <Link to={`/recipes/${fileName}`}>
+          {fileName}
+        </Link>
+      </h2>
+      <p>Posted: {edge.node.frontmatter.date}</p>
+    </article>
+  )})
+
+  
   return (
     <Layout pageTitle="Recipes">
       {
-        data.allMdx.nodes.map(node => (
-          <article key={node.id}>
-            <h2>
-              <Link to={`/recipes/${node.slug}`}>
-                {node.frontmatter.title}
-              </Link>
-            </h2>
-            <p>Posted: {node.frontmatter.date}</p>
-          </article>
-        ))
+        entries
       }
     </Layout>
   )
 }
 
 export const query = graphql`
-  query {
-    allMdx(
-        sort: {fields: frontmatter___date, order: DESC})
-     {
-      nodes {
-        frontmatter {
-          date(formatString: "MMMM D, YYYY")
-          title
+query  {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+            templateKey
+            description
+            date
+          }
+          id
+          fileAbsolutePath
+          
         }
-        id
-        slug
       }
     }
-  }
+}
 `
 
 export default RecipesPage

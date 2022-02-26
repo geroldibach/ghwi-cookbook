@@ -19,12 +19,9 @@ export default function PageTemplate({ data: { mdx } }) {
 
 export const pageQuery = graphql`
   query BlogPostQuery($id: String) {
-    mdx(id: { eq: $id }) {
+    file(id: { eq: $id }) {
       id
       body
-      frontmatter {
-        title
-      }
     }
   }
 `
