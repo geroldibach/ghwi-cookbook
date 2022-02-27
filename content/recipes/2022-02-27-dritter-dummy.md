@@ -2,7 +2,7 @@
 templateKey: recipe
 title: Dritter Dummy
 date: 2022-02-27T06:44:29.473Z
-description: asdfasdfdfafd
+description: Dies ist die Beschreibung des dritten Dummy
 released: true
 ---
-asdfasdadf ads f asdf sadf sa df sadf
+Dies ist der body des dritten Dummy
