@@ -6,7 +6,13 @@ import Layout from '/src/components/layout'
 export default function PageTemplate({ data: { markdownRemark } }) {
   return (
     <Layout pageTitle={markdownRemark.frontmatter.title}>
-    gerold
+    <div>
+      <p>layout1</p>
+      {markdownRemark.frontmatter.description}
+    </div>
+    <div>
+    {markdownRemark.rawMarkdownBody}
+    </div>
     </Layout>
   )
 }
@@ -16,7 +22,9 @@ export const cvPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        description
       }
+      rawMarkdownBody
     }
   }
 `;
