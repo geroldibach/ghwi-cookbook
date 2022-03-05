@@ -16,10 +16,38 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    'gatsby-plugin-mdx',
+    //'gatsby-plugin-mdx',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-source-filesystem`,
+          options: {
+              path: `${__dirname}/static/assets`,
+              name: 'images',
+          },
+  },
+  {
+      resolve: `gatsby-source-filesystem`,
+          options: {
+              path: `${__dirname}/content/recipes`,
+              name: 'recipes',
+          },
+  },
+  {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+          plugins: [
+              'gatsby-remark-relative-images',
+              {
+                  resolve: `gatsby-remark-images`,
+                  options: {
+                      maxWidth: 590,
+                  },
+              },
+          ],
+      },
+  },
+    //'gatsby-transformer-remark',
     // {
     //   resolve: 'gatsby-source-filesystem',
     //   options: {
@@ -27,13 +55,26 @@ module.exports = {
     //     path: `${__dirname}/content/blog`,
     //   },
     // },
-     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: `recipes`,
-        path: `${__dirname}/content/recipes`,
-      },
-    },
+  //   {
+  //     resolve: `gatsby-transformer-remark`,
+  //     options: {
+  //         plugins: [
+  //             {
+  //                 resolve: `gatsby-remark-images`,
+  //                 options: {
+  //                     maxWidth: 590,
+  //                 },
+  //             },
+  //         ],
+  //     },
+  // },
+  //    {
+  //     resolve: 'gatsby-source-filesystem',
+  //     options: {
+  //       name: `recipes`,
+  //       path: `${__dirname}/content/recipes`,
+  //     },
+  //   },
 
     // {
     //   resolve: 'gatsby-source-filesystem',

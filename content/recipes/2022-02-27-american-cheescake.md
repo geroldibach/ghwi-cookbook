@@ -4,7 +4,6 @@ title: American Cheescake
 date: 2022-02-27T18:34:59.481Z
 description: Cheescake Rezept bei dem Mengen und Zeiten stimmen.
 released: true
-image: /asset/blueberries-g097efb547_1920.jpg
 ---
 Boden:
 
