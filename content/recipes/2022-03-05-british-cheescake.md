@@ -4,6 +4,7 @@ title: British Cheescake
 date: 2022-03-05T11:22:55.470Z
 description: This is a stubby clone
 released: true
+image: /asset/cake.jpg
 ---
 Boden:
 
