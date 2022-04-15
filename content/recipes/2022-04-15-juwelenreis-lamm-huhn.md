@@ -3,7 +3,7 @@ templateKey: recipe
 title: Juwelenreis-Lamm-Huhn
 date: 2022-04-15T10:13:49.253Z
 description: Dish had with Ruth Jo Lara and Flint. Chicken cooked to broth.
-  Cooked rice in broth with fried chicken yoghurt almonds parley pomegranate
+  Cooked rice in broth with fried chicken yoghurt almonds parsley pomegranate
 released: true
 ---
 
