@@ -33,7 +33,6 @@ export const cvPageQuery = graphql`
       frontmatter {
         title
         description
-        image
       }
       rawMarkdownBody
     }
