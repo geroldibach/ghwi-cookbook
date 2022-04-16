@@ -2,7 +2,7 @@
 templateKey: recipe
 title: Aroma Tofu mit Spitzkohl
 date: 2022-04-15T10:23:29.215Z
-description: Very tasty vegetarian recipe of daily kitchen
+description: Very tasty vegetarian recipe for daily kitchen
 released: true
 ---
 <h3>Zutaten</h3>
