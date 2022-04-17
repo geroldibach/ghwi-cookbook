@@ -4,6 +4,7 @@ title: Hefewaffeln
 date: 2022-04-17T17:22:06.040Z
 description: Very basic but yummy waffles
 released: true
+image: /asset/hefewaffeln.jpg
 ---
 <h3>Teig</h3>
 
