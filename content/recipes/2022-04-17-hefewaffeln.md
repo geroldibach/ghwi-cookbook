@@ -10,7 +10,7 @@ image: /asset/hefewaffeln.jpg
 
 <ul>
 <li>1/2 Würfel Hefe</li>
-<li>100 ml  lauwarme Milch</li>
+<li>200 ml  lauwarme Milch</li>
 <li>50 gr Zucker </li>
 <li>220 gr Mehl </li>
 <li>1 Prise Salz </li>
@@ -18,4 +18,4 @@ image: /asset/hefewaffeln.jpg
 <li>50 gr Butter </li>
 </ul>
 
-<p>Die Hefe im Vortag mit Milch und einem Eßlöffel Zucker gehen lassen. Teig herstellen und mindestens 45 Minuten gehen lassen. Der Teig muss noch knapp zähflüssig sein, wenn er in das Waffeleisen gegeben wird.</p>
+<p>Die Hefe im Vorteig mit 200ml Milch und einem Eßlöffel Zucker gehen lassen. Teig herstellen und mindestens 45 Minuten gehen lassen. Der Teig muss noch knapp zähflüssig sein, wenn er in das Waffeleisen gegeben wird.</p>
